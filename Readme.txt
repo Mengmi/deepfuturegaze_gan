@@ -1,0 +1,33 @@
+dataset: sample training set from GTEA
+ - adversial: each training data is 32 consecutive video frames 
+ - adversial: corresponding gaussian masked fixation maps for supervised training
+
+
+filelist: a list of filenames to read and test on
+
+matlab: evluation code to display predicted saliency maps and evaluate its performance
+ - run computeAUCAAEAdversaial_gtea.m
+
+models: to store saved models at checkpoints
+
+OSdatasetProcess: matlab code for pre-processing Object Search Dataset (OS)
+ - VXY: ground truth gaze data
+
+results: to store predicted saliency maps in .mat converted from Torch
+
+vis: to store generated future frames, backgrounds, masks
+
+torchMM: 
+ - main_GAN: training adversarial networks
+ - main_gazePred: training gaze prediction module
+ - generateGAN: testing file to generate future frames and store in vis folder
+ - generateGaze: testing file to generate future gazes and store in .mat in results
+
+OSdatasetProcess:
+ - GenerateFrameOSDataset: generate frames from raw vides
+ - GenerateGazeOSDatast: generate gaze from raw data recorded from eyetrackers
+ - GenerateAdversarialTrainingImage: combine frames into training data formats: consecutive 32 frames into 1 long frame
+ - GenerateAdversarialTrainingMask: combine gaussian masked ground truth fixation maps: consecutive 32 fixation maps into 1 long frame
+
+**The source code can be run directly. In order to train the network, pls download the GTEA, GTEAplus and OS datasets.
+Use the OSdataset sample codes to pre-process the data to generate training and testing dataset. 
