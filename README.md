@@ -10,6 +10,17 @@ Supplementary Material is downloadable [Here](https://media.wix.com/ugd/d2b381_a
 
 We introduce a new problem of gaze anticipation on egocentric videos. This substantially extends the conventional gaze prediction problem to future frames by no longer confining it on the current frame. To solve this problem, we propose a new generative adversarial neural network based model, Deep Future Gaze (DFG). DFG generates multiple future frames conditioned on the single current frame and anticipates corresponding future gazes in next few seconds.
 
+| [![GT](vis/groundtruth.gif)](vis/groundtruth.gif)  | [![Anticipated Gaze](vis/futuregaze.gif)](vis/futuregaze.gif) | [![Generated Future Frames](vis/generated.gif)](vis/generated.gif) |
+|:---:|:---:|:---:|
+| Ground Truth | Anticipated Gaze | Generated Future Frames |
+
+| [![Foreground](vis/foreground.gif)](vis/foreground.gif)  | [![background](vis/background.gif)](vis/background.gif) | [![mask](vis/mask.gif)](vis/mask.gif) |
+|:---:|:---:|:---:|
+| Foreground | Background | Mask |
+
+
+
+
 ## Training
 
 The code requires a Torch7 installation. It is developed based on [Generating Videos with Scene Dynamics](https://github.com/cvondrick/videogan).
@@ -22,6 +33,7 @@ Clone the repository
 ```
 git clone https://github.com/Mengmi/deepfuturegaze_gan.git
 ```
+In /torchMM:
 
 Run "main_GAN.lua" to start training GAN
 
