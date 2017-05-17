@@ -51,7 +51,7 @@ Run "GenerateAdversarialTrainingImage.m" to generate training images (consisting
 
 Run "GenerateAdversarialTrainingMask.m" to generate gaussian masked fixation maps (consisting of concated 32 fixation maps in one image)
 
-The dataset is avaialbe [Part1](https://drive.google.com/file/d/0B5nxfBgktACsMWdGOC1zQ29md0k/view?usp=sharing), [Part2]().
+The dataset is avaialbe [Part1](https://drive.google.com/file/d/0B5nxfBgktACsMWdGOC1zQ29md0k/view?usp=sharing), [Part2](https://drive.google.com/file/d/0BzNj4DVGxJtiRmxJckUyVHg1SGM/view?usp=sharing).
 
 ## Notes
 
