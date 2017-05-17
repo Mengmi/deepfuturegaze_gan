@@ -35,7 +35,8 @@ Run "generateGaze.lua" to generate future gazes and save .mat in /results folder
 
 We have trained and tested on three egocentric datasets. 
 
-### GTEA and GTEA+ datasets: [Here](http://ai.stanford.edu/~alireza/GTEA_Gaze_Website/) 
+### GTEA and GTEA+ datasets:
+They are available [Here](http://ai.stanford.edu/~alireza/GTEA_Gaze_Website/). 
 
 ### Our Object Search Dataset (OS):
 we contribute this new dataset for the object search task. This dataset consists of 57 sequences on search and retrieval tasks performed by 55 subjects. Each video clip lasts for around 15 minutes with the frame rate 10 fps and frame resolution 480 by 640. Each subject is asked to search for a list of 22 items (including lanyard, laptop) and move them to the packing location (dining table). Details about the 22 items are provided in Supplementary Material. We select frames near the packing location and use videos 1 to 7 as test set and the rest for training and validation. The selected frame list is provided in 'OSdatasetProcess/OStable.mat'.
@@ -50,7 +51,7 @@ Run "GenerateAdversarialTrainingImage.m" to generate training images (consisting
 
 Run "GenerateAdversarialTrainingMask.m" to generate gaussian masked fixation maps (consisting of concated 32 fixation maps in one image)
 
-The datasets will be uploaded SOON.
+The dataset is avaialbe [Part1](https://drive.google.com/file/d/0B5nxfBgktACsMWdGOC1zQ29md0k/view?usp=sharing) [Part2]().
 
 ## Notes
 
