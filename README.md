@@ -3,9 +3,11 @@
 This repository contains an implementation of Deep Future Gaze: Gaze Anticipation on Egocentric Videos Using Adversarial Networks by Mengmi Zhang, Keng Teck Ma, Joo Hwee Lim, Qi Zhao, and Jiashi Feng, to appear at CVPR 2017. 
 
 Please go to CVPR website for downloads. An unofficial copy is downloadable here: 
+
 https://media.wix.com/ugd/d2b381_b48aa16a715b4826947d7d5ae383a8a6.pdf
 
 Supplementary Material:
+
 https://media.wix.com/ugd/d2b381_a8fc394461af405498126540d3012d3b.pdf
 
 ## Project Description
@@ -32,7 +34,7 @@ Run "generateGAN.lua" to test the performance of GAN
 
 Run "main_gazePred.lua" to start training gaze prediction module
 
-Run "generateGaze.lua" to generate future gazes and store .mat in /results folder
+Run "generateGaze.lua" to generate future gazes and save .mat in /results folder
 
 ## Data
 
