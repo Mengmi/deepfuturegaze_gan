@@ -40,7 +40,7 @@ Run "generateGaze.lua" to generate future gazes and save .mat in /results folder
 
 We have trained and tested on three egocentric datasets. 
 
-### GTEA and GTEA+ dataset: 
+### GTEA and GTEA+ datasets: 
 http://ai.stanford.edu/~alireza/GTEA_Gaze_Website/
 
 ### Our Object Search Dataset (OS):
