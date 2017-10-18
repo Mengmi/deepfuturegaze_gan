@@ -65,6 +65,8 @@ Run "GenerateAdversarialTrainingMask.m" to generate gaussian masked fixation map
 
 The dataset is avaialbe [Part1](https://drive.google.com/file/d/0B5nxfBgktACsMWdGOC1zQ29md0k/view?usp=sharing), [Part2](https://drive.google.com/file/d/0BzNj4DVGxJtiRmxJckUyVHg1SGM/view?usp=sharing).
 
+The eyetracking ground truth is in OSdatasetProcess/VXY folder.
+
 ## Notes
 
 The source code is for illustration purpose only. You can download and run directly. Note that /dataset folder only contains a few training samples for the code to run.  
