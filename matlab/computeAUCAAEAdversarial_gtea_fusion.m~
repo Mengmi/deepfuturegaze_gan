@@ -11,6 +11,8 @@ TotalImg = 32; %total number of images
 
 resultdir = '../results/gtea_gaze_m16/';
 savedir = 'gtea_gaze_m16'; %prefix of saved mat files
+resultdir2 = '../results/gtea_gaze_prior/';
+savedir2 = 'gtea_gaze_prior'; %prefix of saved mat files
 
 yellow = uint8([255 255 0]);
 shapeInserter = vision.ShapeInserter('Shape','Circles','BorderColor','Custom','CustomBorderColor',yellow, 'FillColor','White');
@@ -29,6 +31,12 @@ for i =1 : TotalImg
                
         test = load([resultdir savedir '_' num2str(i) '_' num2str(j) '.mat']);
         test = squeeze(test.x);
+
+        test2 = load([resultdir2 savedir2 '_' num2str(i) '_' num2str(j) '.mat']);
+        test2 = squeeze(test2.x);
+
+        %combine DFG-G and DFG-P together
+        test = mat2gray( mat2gray(test) + mat2gray(test2)  )
                
         %read in camera frame
         %upngstr = sprintf('%03d', input.video);
