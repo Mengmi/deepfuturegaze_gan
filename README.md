@@ -74,6 +74,46 @@ The dataset is avaialbe [Part1](https://drive.google.com/file/d/0B5nxfBgktACsMWd
 
 The eyetracking ground truth is in OSdatasetProcess/VXY folder.
 
+## Comparative methods
+
+We provide the souce codes of comparative methods used in our experiments. They can be download from [HERE](https://drive.google.com/file/d/13TeBMLk5tE3vTsbXuyD7gXO1TG65msgG/view?usp=sharing). These methods include: AIM, AWS, Itti, SUN, ImSig, GBVS, Center Bias, AWSD, OBDL, SALICON (refer to our paper for respective descriptions) and variants of our DFG model. We modified their source codes in order to test on our datasets. One can also directly download their original source codes from their websites.
+
+### Saliency on static images
+This includes AIM, AWS, Itti, SUN, ImSig, GBVS, Center Bias and SALICON. In ```+pami``` :
+
+Run "MMComputeAAEAUCAdversial_future_holly.m" to test these methods on future frames in Hollywood2 Dataset.
+
+Run "MMComputeAAEAUCAdversialCurrentFrame_hollywood.m" to test these methods on current frames.
+
+Run "salicon/MMsalicon_holly_train.lua" to train SALICON model.
+
+Run "salicon/MMsalicon_holly_test_current.lua" to test SALICON model on current frames.
+
+Run "salicon/MMsalicon_holly_test_future.lua" to test SALICON model on future frames.
+
+Run "+pami/computeAUCAAEAdversarialSALICON_holly.m" to evaluate the performance of SALICON model on future frames.
+
+One can easily generalize modify the directory to test on other datasets.
+
+### Saliency on videos
+This includes AWSD and OBDL. 
+
+Run "AWSD/MM_AWSD.m" to test AWSD.
+
+Run "+pami/MMComputeAAEAUCAdversial_future_holly_AWSD.m" to evaluate AWSD on future frames.
+
+Run "OBDL/SOURCE/main.m" to test OBDL.
+
+Run "+pami/MMComputeAAEAUCAdversial_future_holly_OBDL.m" to evaluate OBDL on future frames.
+
+### Variants of our DFG model
+
+Run "+pami/computeAUCAAEAdversarial_holly_DFGP.m" to evaluate DFG-P pathway alone.
+
+Run "+pami/computeAUCAAEAdversarial_holly_fusion_gaussprior.m" to evaluate DFG-G pathway + Gaze distribution map (see our TPAMI paper for details).
+
+Run "+pami/computeAUCAAEAdversarial_holly_gausspriorAlone.m" to evaluate Gaze distribution map alone.
+
 ## Notes
 
 The source code is for illustration purpose only. You can download and run directly. Note that /dataset folder only contains a few training samples for the code to run.  
