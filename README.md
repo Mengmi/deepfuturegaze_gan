@@ -95,7 +95,7 @@ Run "salicon/MMsalicon_holly_test_future.lua" to test SALICON model on future fr
 
 Run "+pami/computeAUCAAEAdversarialSALICON_holly.m" to evaluate the performance of SALICON model on future frames.
 
-One can easily generalize modify the directory to test on other datasets.
+One can easily generalize by modifying the directory to test on other datasets.
 
 ### Saliency on videos
 This includes AWSD and OBDL. 
