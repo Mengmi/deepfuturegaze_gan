@@ -78,6 +78,8 @@ The eyetracking ground truth is in OSdatasetProcess/VXY folder.
 
 We provide the souce codes of comparative methods used in our experiments. They can be download from [HERE](https://drive.google.com/file/d/13TeBMLk5tE3vTsbXuyD7gXO1TG65msgG/view?usp=sharing). These methods include: AIM, AWS, Itti, SUN, ImSig, GBVS, Center Bias, AWSD, OBDL, SALICON (refer to our paper for respective descriptions) and variants of our DFG model. We modified their source codes in order to test on our datasets. One can also directly download their original source codes from their websites.
 
+Run "+pami/setup.m" for path configurations before running the following scripts.
+
 ### Saliency on static images
 This includes AIM, AWS, Itti, SUN, ImSig, GBVS, Center Bias and SALICON. 
 
