@@ -6,11 +6,16 @@ Please go to CVPR website for downloads. An unofficial copy is downloadable [Her
 
 Supplementary Material is downloadable [Here](https://media.wix.com/ugd/d2b381_a8fc394461af405498126540d3012d3b.pdf).
 
+Our TPAMI paper is accepted which is an extended version of CVPR paper. 
+An unofficial copy is downloadable [Here](https://docs.wixstatic.com/ugd/d2b381_86633109b089467e87abbf4fafaa14f3.pdf).
+
+Supplementary Material is downloadable [Here](https://docs.wixstatic.com/ugd/d2b381_d3a0d9e851a8402eb7e7e62d4f6ce74e.pdf).
+
 ## Project Description
 
 We introduce a new problem of gaze anticipation on egocentric videos. This substantially extends the conventional gaze prediction problem to future frames by no longer confining it on the current frame. To solve this problem, we propose a new generative adversarial neural network based model, Deep Future Gaze (DFG). DFG generates multiple future frames conditioned on the single current frame and anticipates corresponding future gazes in next few seconds.
 
-We now provide extension of our CVPR work by adding in a DFG-P pathway in parallel to our CVPR work (DFG-G) pathway. DFG-P pathway predicts gaze prior maps based on the task information extracted at the current frame. With fusion of this task-specific pathway and DFG-G, our model significantly boosts up gaze anticipation performance. The manuscript of our extended work is under review.
+We now provide extension of our CVPR work by adding in a DFG-P pathway in parallel to our CVPR work (DFG-G) pathway. DFG-P pathway predicts gaze prior maps based on the task information extracted at the current frame. With fusion of this task-specific pathway and DFG-G, our model significantly boosts up gaze anticipation performance. 
 
 | [![GT](vis/groundtruth.gif)](vis/groundtruth.gif)  | [![Anticipated Gaze](vis/futuregaze.gif)](vis/futuregaze.gif) | [![Generated Future Frames](vis/generated.gif)](vis/generated.gif) |
 |:---:|:---:|:---:|
