@@ -125,7 +125,9 @@ Run "+pami/computeAUCAAEAdversarial_holly_gausspriorAlone.m" to evaluate Gaze di
 
 The source code is for illustration purpose only. You can download and run directly. Note that /dataset folder only contains a few training samples for the code to run.  
 
-In order to train the network, you must download GTEA, GTEAPlus and our Object Search Dataset. Sample codes for pre-processing datasets are provided in /OSdatasetProcess folder.
+In order to train the network, you must download GTEA, GTEAPlus and our Object Search Dataset. Sample codes for pre-processing datasets are provided in /OSdatasetProcess folder. 
+
+We provide the pre-trained models (GAN, DFG-G and DFG-P pathways) trained on egocentric videos of subject 2 - 5 in GTEA+ Dataset and one may feel free to download them from [HERE](https://drive.google.com/open?id=1nBXEDemNesYmVGtaSYvlETpwh7H2VzUa). 
 
 ## File Description
 
