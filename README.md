@@ -75,7 +75,8 @@ Run "GenerateAdversarialTrainingImage.m" to generate training images (consisting
 
 Run "GenerateAdversarialTrainingMask.m" to generate gaussian masked fixation maps (consisting of concated 32 fixation maps in one image)
 
-The dataset is avaialbe [Part1](https://drive.google.com/file/d/0B5nxfBgktACsMWdGOC1zQ29md0k/view?usp=sharing), [Part2](https://drive.google.com/file/d/0BzNj4DVGxJtiRmxJckUyVHg1SGM/view?usp=sharing).
+The dataset is avaialbe [Part1](https://drive.google.com/file/d/0B5nxfBgktACsMWdGOC1zQ29md0k/view?usp=sharing)(640x480 resolution videos with frame rate 10Hz), [Part2](https://drive.google.com/file/d/0BzNj4DVGxJtiRmxJckUyVHg1SGM/view?usp=sharing), [Part3](https://1drv.ms/u/s!AlbUEZwbzfTE5JEQqDYVI8ePJVk2dA?e=FaCGNJ
+)(1280x960 resolution videos with frame rate 24Hz).
 
 The eyetracking ground truth is in OSdatasetProcess/VXY folder.
 
